@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel = "icon" href = "https://cdn.pixabay.com/photo/2021/03/23/09/01/webcam-6116845_1280.png" type = "image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../static/styles/mj.css">
+
+    <title>Photo Detection</title>
+</head>
+<body class="app-page">
+    <div class="site-strap">
+        <div class="brand">Age and Gender Prediction</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/webcam">Live</a>
+            <a href="/">Upload</a>
+        </nav>
+    </div>
+    <main class="page-content">
+        <section class="page-panel">
+            <div class="panel-title"><h2>Photo Detection</h2></div>
+            <div class="media-card">
+                <img class="media-frame" src="{{ url_for('upload_file') }}" alt="Detection result">
+            </div>
+        </section>
+    </main>
+    <div class="site-footer">
+        <div>© Jahnavi Marrapu</div>
+        <div><a href="#">To the top</a></div>
+    </div>
+</body>
+</html>
